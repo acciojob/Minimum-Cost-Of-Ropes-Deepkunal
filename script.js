@@ -11,7 +11,8 @@ while(arr.length>1){
 	var res=Number(arr[0])+Number(arr[1]);
 	arr.push(res);
 	cost+=res;
-	arr.splice(0,2);
+	arr.shift();
+	arr.shift();
 	arr.sort(function (a,b){
 		return a-b
 		
